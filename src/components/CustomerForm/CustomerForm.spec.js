@@ -13,23 +13,25 @@ it('Should render Customer form correctly', () => {
 })
 
 it('Should validate field correctly', () => {
-  const { debug, getByPlaceholderText, getByTestId, getByText } = render(<CustomeForm />)
+  const { debug, getByPlaceholderText, getByTestId, getByText, queryAllByText } = render(<CustomeForm />)
 
-  const nameInput = getByPlaceholderText('Nome') 
+  const nameInput = getByPlaceholderText('Nome')
   fireEvent.change(nameInput, { target: { value: 'Lais Lima' } })
 
-  const locationInput = getByTestId('location') 
+  const locationInput = getByTestId('location')
   fireEvent.click(locationInput)
 
   const choosedOption = getByText('DC').closest('option')
   fireEvent.click(choosedOption)
 
-  const rememberInput = getByTestId('remember') 
+  const rememberInput = getByTestId('remember')
   fireEvent.click(rememberInput)
 
   const submitButton = getByText('Submit').closest('button')
   fireEvent.click(submitButton)
 
-  debug()
-  expect(getByText('Laís Lima')).toBeTruthy()
+  // debug()
+
+  expect(getByText('Lais Lima')).toBeTruthy()
+  expect(getByText('boop')).toBeTruthy()
 })

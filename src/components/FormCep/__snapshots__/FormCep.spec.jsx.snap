@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render cep form 1`] = `
+<div>
+  <form
+    class="css-1ldrcmr"
+  >
+    <div
+      class="css-1viozcy"
+    >
+      <div
+        class="css-1e8zq2i"
+      >
+        <label
+          class="css-knfhfe"
+          for="cep"
+        >
+          Cep
+        </label>
+        <input
+          class="css-4y926w"
+          id="cep"
+          name="cep"
+          placeholder="CEP"
+          type="text"
+        />
+      </div>
+      <div
+        class="css-1e8zq2i"
+      >
+        <label
+          class="css-knfhfe"
+          for="bairro"
+        >
+          Bairro
+        </label>
+        <input
+          class="css-4y926w"
+          id="bairro"
+          name="bairro"
+          placeholder="bairro"
+          type="text"
+          value="Novo rio"
+        />
+      </div>
+      <div
+        class="css-1e8zq2i"
+      >
+        <label
+          class="css-knfhfe"
+          for="logradouro"
+        >
+          Logradouro
+        </label>
+        <input
+          class="css-4y926w"
+          id="logradouro"
+          name="logradouro"
+          placeholder="logradouro"
+          type="text"
+          value="Rua x"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;

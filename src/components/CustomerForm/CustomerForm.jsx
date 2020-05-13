@@ -136,7 +136,7 @@ const CustomerForm = props => {
               Remember?
             </Text>
             <Text>
-              {remember}
+              {remember ? 'Yes' : 'No'}
             </Text>
           </Flex>
         </Flex>
